@@ -20,12 +20,14 @@ public class RemoveVowelsTest {
         object = null;
     }
 
+    //When names have vowels in them
     @Test
     public void convertNamesHavingVowels() {
         String[] output = object.removeVowels(new String[] {"india","bangladesh","united states"});
         assertArrayEquals(new String[]{"nd","bngldsh","ntd stts"},output);
     }
 
+    ////When names don't have vowels in them
     @Test
     public void convertNamesNotHavingVowels() {
         String[] output = object.removeVowels(new String[] {"xyz","srt","jkl"});

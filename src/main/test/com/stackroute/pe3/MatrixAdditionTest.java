@@ -19,6 +19,7 @@ public class MatrixAdditionTest {
         object = null;
     }
 
+    //Test case1
     @Test
     public void addMatricesWithPositiveInput() {
         int result[][] = object.addMatrices(3,2, new int[][] {{1,2},{3,4},{5,6}},new int[][] {{9,8},{7,6},{5,4}});
@@ -26,6 +27,7 @@ public class MatrixAdditionTest {
 
     }
 
+    //Test case 2
     @Test
     public void  addMatricesEithNegativeNumbers() {
         int result[][] = object.addMatrices(3,2, new int[][] {{1,2},{3,4},{5,6}},new int[][] {{-9,8},{-7,6},{5,-4}});
